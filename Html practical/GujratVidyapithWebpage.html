@@ -1,0 +1,237 @@
+<!Doctype html>
+<html>
+<head>
+<meta name="images"
+content="width=device-width,
+initial-scale=1">
+
+    <style>
+        #nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: block;
+            position: relative;
+            float: left;
+            background: #24af15;
+            /* menu background color */
+        }
+
+        #nav li a {
+            display: block;
+            padding: 0;
+            text-decoration: none;
+            width: 200px;
+            /* this is the width of the menu items */
+            line-height: 35px;
+            /* this is the hieght of the menu items */
+            color: #ffffff;
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 80%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #nav li:hover {
+            background: #003f20;
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 200px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
+	
+		img{
+  background-position:left;
+  width: 100%;
+  height:350px;
+}
+
+
+h1{align:right-top;
+	padding-bottom:5px;
+}
+
+
+.row{
+flex:80%;
+padding:5px;
+height:200;
+width:250;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+div {
+  background-image: url('100year.png') ;image-opacity:0.5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  padding: 5px;
+}
+p{
+color:#DC143C;
+text-align:center;
+font face :Monotype Corsiva;size : "6";}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+h4{border-style: solid;
+  border-width: 25px 10px 4px 35px; 
+  border-color: teal;
+
+ }
+</style>
+</head>
+	<body>
+	
+<img src="../Html practical/images/miximage.jpg" width="200" height="500" alt="image2">
+
+<marquee width="100%" direction="RIGHT" height="100px">
+<h1 style="text-shadow:2px 0px 2px green; text-align:center; background-color:aqua;">Welcome To the GujaratVidyapith</h1>
+</marquee><h4>
+<P style=" background-color:pink" ;><b>
+<p class="p1">Nr, income Tax Office ,Ashram Road, Ahmedabad-380014.</p>
+<p class="p2">Gujrat State, India.
+Phone:079-27541148,40012162</p>
+<p class="p3">phone:079-27541148,40012162.<br>
+URL: www.gujaratvidyapith.org, www.gujaratvidyapith.ac.in, www.gujaratvidyapith.edu.in<br>
+</p></h4>
+
+
+	<ul>
+    <ul id="nav" background-image:"../images/logo.jpg">
+        <li><a href="about.html">About</a></li>
+		<li><a href="#">Home</a></li>
+        <li><a href="#">Commerce</a>
+		<ul>
+                        <li><a href="b.com.html">B.Com</a>
+                            <li><a href="m.com.html">M.COM</a>
+							
+                    </ul>
+				</li>
+		       
+                <li><a href="#">Arts</a>
+				<ul>
+                        <li><a href="b.a.html">B.A</a>
+                            <li><a href="m.a.html">M.A</a>
+							
+                </ul>
+				</li>
+                <li><a href="#">Science</a>
+                    <ul>
+                        <li><a href="b.sc.html">B.sc</a>
+                            <li><a href="m.sc.html">M.sc</a>
+							
+                    </ul>
+            </li>
+			 <li><a href="#">IT</a>
+                    <ul>
+						<li><a href="pgdca.html">PGDCA</a>
+						
+                            <li><a href="bca.html">BCA</a>
+							
+							<li><a href="mca.html">MCA</a>
+							
+                
+                    </li>
+            </ul>
+			 
+    </ul>
+	</ul>
+	<br>
+	<br><br>
+	<br>
+	
+
+
+
+<div align="center";>
+<h2>Quality Higher Education</h2><br>
+ 
+<h3>Accredited with 'A' Grade by NAAC</h3><br>
+Presently, Gujarat Vidyapith offers many programs from UG to PhD under the 8 Faculties. <br>They are in the allied disciplines of Computer Science & Applications, Rural Management, Science & Applied Sciences (Bio-gas Research, Microbiology), Languages, Social & Allied Science (Social Anthropology / Sociology, Rural Economics,History and Culture,Social Science), Education, Gandhian Studies, Professional Studies (Social Work, Journalism and Mass Communication, Library Science), Physical Education and Sports.
+ 
+<h5 style=" color:blue"; "font-size:50px";>ACCREDITED WITH 'A' GRADE BY NAAC<br>
+ACRES OF LUSH GREEN CAMPUS<br>
+DISTINGUISHED QUALIFIED FACULTY<br>
+GYMNASIUM, SWIMING POOL, INDOOR AND OUTDOOR SPORTS FACILITIES<br>
+HOSTEL FACILITY<br>
+INTERNET FACILITY<br>
+CENTRAL LIBRARY<br>
+
+HEALTH CENTRE<br></h5>
+</div>
+
+</html>
